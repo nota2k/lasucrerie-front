@@ -10,7 +10,7 @@
 		<div class="main-menu">
 			<ul class="main-nav">
 				<li aria-current={page.url.pathname === '/video' ? 'page' : undefined}>
-					<a class="nav-links" href="/">Video</a>
+					<a class="nav-links" href="/video">Video</a>
 				</li>
 				<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
 					<a class="nav-links" href="/photo">Photo</a>
