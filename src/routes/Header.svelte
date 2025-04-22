@@ -1,35 +1,64 @@
 <script>
 	import { page } from '$app/state';
-	import github from '$lib/images/github.svg';
 </script>
 
 <header>
-	<div class="logo-wrapper">
-        <img src="/images/Logo-sucrerie-horizontal-blanc.png" alt="Logo Sucrerie" />
-    </div>
-	<nav>
-		<ul>
-			<li aria-current={page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Video</a>
-			</li>
-			<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/photo">Photo</a>
-			</li>
-			<li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/talents">Talents</a>
-			</li>
-			<li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/podcasts">Podcasts</a>
-			</li>
-			<li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
-	</nav>
+	<a href="/" class="navbar-brand">
+		<img class="logo-sucrerie" src="/images/Logo-sucrerie-horizontal-blanc.png" alt="Logo Sucrerie" />
+	</a>
+	<div class="menu-desktop-without-mosaic">
+		<div class="main-menu">
+			<ul class="main-nav">
+				<li aria-current={page.url.pathname === '/video' ? 'page' : undefined}>
+					<a class="nav-links" href="/">Video</a>
+				</li>
+				<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
+					<a class="nav-links" href="/photo">Photo</a>
+				</li>
+				<li aria-current={page.url.pathname.startsWith('/talents') ? 'page' : undefined}>
+					<a class="nav-links" href="/talents">Talents</a>
+				</li>
+				<li aria-current={page.url.pathname.startsWith('/podcasts') ? 'page' : undefined}>
+					<a class="nav-links" href="/podcasts">Podcasts</a>
+				</li>
+				<li aria-current={page.url.pathname.startsWith('/about') ? 'page' : undefined}>
+					<a class="nav-links" href="/about">About</a>
+				</li>
+				<li aria-current={page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
+					<a class="nav-links" href="/contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr class="line-navbar" color="white">
 </header>
 
 <style>
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 2rem;
+		background-color: #000;
+	}
+
+	header .logo img {
+		max-width: 100px;
+	}
+
+	header nav ul {
+		list-style: none;
+		display: flex;
+		gap: 2rem;
+	}
+
+	header nav ul li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	header nav ul li[aria-current='page'] a {
+		font-weight: bold;
+	}
 </style>

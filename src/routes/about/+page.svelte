@@ -4,23 +4,25 @@
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>About</h1>
 
 	<p>
-		This is a <a href="https://svelte.dev/docs/kit">SvelteKit</a> app. You can make your own by typing
-		the following into your command line and following the prompts:
+		LA SUCRERIE est un laboratoire de création de contenus dont le territoire s’étend de la création
+		vidéo dans toutes ses formes — du clip au brand content et du documentaire à la fiction — au
+		podcast et à la photographie. La Sucrerie a à cœur de représenter la société, le contemporain et
+		d’explorer de nouvelles histoires et de nouveaux horizons avec un œil neuf et une ambition
+		créative. Incarnée par ses talents, La Sucrerie façonne des solutions sur-mesure à ses
+		partenaires à qui elle propose des formules conjuguant autant de disciplines qu’il en faut pour
+		faire passer l’image et l’histoire de ses partenaires au niveau suivant.
 	</p>
+</div>
 
-	<pre>npx sv create</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
+<div class="gallery-wrapper">
+	<img src="/images/bureau-01.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-02.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-03.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-04.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-05.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-06.jpg" alt="Logo Sucrerie" />
+	<img src="/images/bureau-01.jpg" alt="Logo Sucrerie" />
 </div>

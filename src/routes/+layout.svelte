@@ -13,12 +13,6 @@
 	<main>
 		{@render children()}
 	</main>
-
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
-	</footer>
 </div>
 
 <style>
@@ -26,6 +20,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		background: black;
 	}
 
 	main {
@@ -37,6 +32,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
+		background-color: var(--bg-dark);
 	}
 
 	footer {
