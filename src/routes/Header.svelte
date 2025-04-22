@@ -3,38 +3,54 @@
 </script>
 
 <header>
-	<a href="/" class="navbar-brand">
-		<img class="logo-sucrerie" src="/images/Logo-sucrerie-horizontal-blanc.png" alt="Logo Sucrerie" />
-	</a>
-	<div class="menu-desktop-without-mosaic">
+	<div class="navbar_without_mosaic sticky-top">
+		<a href="/" class="navbar-brand">
+			<img
+				class="logo-sucrerie"
+				src="/images/Logo-sucrerie-horizontal-blanc.png"
+				alt="Logo Sucrerie"
+			/>
+		</a>
+
 		<div class="main-menu">
-			<ul class="main-nav">
-				<li aria-current={page.url.pathname === '/video' ? 'page' : undefined}>
-					<a class="nav-links" href="/">Video</a>
+			<ul class="main-nav" id="js-menu">
+				<li class="TV-nav aos-init aos-animate" data-aos="fade-right" data-aos-once="true">
+					<a class="nav-links" href="/videos?section=music&amp;view=mosaic">VIDÉO</a>
 				</li>
-				<li aria-current={page.url.pathname === '/about' ? 'page' : undefined}>
-					<a class="nav-links" href="/photo">Photo</a>
+				<li
+					class="nav-no-undermenu aos-init aos-animate"
+					data-aos="fade-right"
+					data-aos-once="true"
+				>
+					<a class="nav-links" href="/images">PHOTO</a>
 				</li>
-				<li aria-current={page.url.pathname.startsWith('/talents') ? 'page' : undefined}>
-					<a class="nav-links" href="/talents">Talents</a>
+				<li class="TALENT-nav aos-init aos-animate" data-aos="fade-right" data-aos-once="true">
+					<a class="nav-links" href="/talents">TALENTS</a>
 				</li>
-				<li aria-current={page.url.pathname.startsWith('/podcasts') ? 'page' : undefined}>
-					<a class="nav-links" href="/podcasts">Podcasts</a>
+				<li class="PODCAST-nav aos-init aos-animate" data-aos="fade-right" data-aos-once="true">
+					<a class="nav-links" href="/podcasts">PODCASTS</a>
 				</li>
-				<li aria-current={page.url.pathname.startsWith('/about') ? 'page' : undefined}>
-					<a class="nav-links" href="/about">About</a>
+				<li
+					class="nav-no-undermenu aos-init aos-animate"
+					data-aos="fade-right"
+					data-aos-once="true"
+				>
+					<a class="nav-links" href="/about">ABOUT</a>
 				</li>
-				<li aria-current={page.url.pathname.startsWith('/contact') ? 'page' : undefined}>
-					<a class="nav-links" href="/contact">Contact</a>
+				<li
+					class="nav-no-undermenu aos-init aos-animate"
+					data-aos="fade-right"
+					data-aos-once="true"
+				>
+					<a class="nav-links" href="/contacts">CONTACT</a>
 				</li>
 			</ul>
 		</div>
+		<hr class="line-navbar" color="white" />
 	</div>
-	<hr class="line-navbar" color="white">
 </header>
 
 <style>
-
 	header {
 		display: flex;
 		justify-content: space-between;

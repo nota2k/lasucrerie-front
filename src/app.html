@@ -3,10 +3,14 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<script src="js/application.js" defer></script>
+		<script src="js/jquery.min.js" defer></script>
+		<script src="js/jquery.justifiedGallery.min.js" defer></script>
+		<script src="js/aos.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

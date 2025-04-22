@@ -2,6 +2,7 @@
 	import Header from './Header.svelte';
 	import '../app.css';
 	import '../main.scss';
+	import '../aos.css';
 	export const prerender = true;
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
@@ -35,21 +36,4 @@
 		background-color: var(--bg-dark);
 	}
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
 </style>
