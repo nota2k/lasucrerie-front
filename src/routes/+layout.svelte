@@ -6,6 +6,7 @@
 	export const prerender = true;
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
+	
 </script>
 
 <div class="app">

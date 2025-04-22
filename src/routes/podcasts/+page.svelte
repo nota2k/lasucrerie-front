@@ -3,12 +3,6 @@
 	<meta name="description" content="Podcasts" />
 </svelte:head>
 
-<div class="jouuue-div">
-	<img
-		class="jouuue-logo"
-		src="/assets/LOWWOOD/PNG/Logo-LW-blanc-aa27800da99415b95750e757b2d9fb34f929c07673224053f961c070bd906885.png"
-	/>
-</div>
 <div id="fullmosaicpodcast">
 	<div class="video-container-mosaic">
 		<a href="/podcasts/7">
