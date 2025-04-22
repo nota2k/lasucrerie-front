@@ -1,7 +1,8 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
-
+	import '../main.scss';
+	export const prerender = true;
 	/** @type {{children: import('svelte').Snippet}} */
 	let { children } = $props();
 </script>
